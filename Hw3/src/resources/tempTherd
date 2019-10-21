@@ -1,0 +1,9 @@
+foo: &FOO
+  <<propname>>:
+    type: number
+    default: <<default>>
+
+bar:
+  - *FOO
+    propname: "some_prop"
+    default: "some default"
